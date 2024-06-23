@@ -69,7 +69,7 @@
 
 .headers_number::before{
 	content: '';
-	background: url("D:/site's maket/Макет с фигмы/image/icon/Vector.png");
+	background: url("D:/site maket/image/icon/Vector.png");
 	display: inline-block;
 	width: 19px;
 	height: 19px;
