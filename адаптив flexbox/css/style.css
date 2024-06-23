@@ -1,0 +1,204 @@
+.body{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+
+}
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.navhead{
+	background-color: white;
+	height: 60px;
+	margin: 0;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 10px;
+}
+
+.nav a{
+	text-decoration: none;
+	color: #000;
+	font-size: 24px;
+	padding: 10px 20px;
+}
+
+.nav a:hover{
+	background-color: rgba(0,0,0,.2);
+}
+
+.block{
+	display:flex;
+	flex-direction: row;
+	flex:1 1 auto;
+}
+
+.block-row{
+	max-width: 50%;
+	display:flex;
+	flex-direction: column!important;
+	flex-wrap: wrap;
+}
+
+.block-row2{
+	max-width: 50%;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+@media (max-width:530px){
+	.image__me img{
+		width: 300px;
+		height: 200px;
+	}
+}
+
+@media (max-width: 601px){
+	.block{
+		flex-direction: column;
+	}
+	.block-row{
+	max-width: 100%;
+	}
+		.block-row2{
+	max-width: 100%;
+	}
+
+	.nav a{
+		font-size: 18px;
+	}
+
+	.container{
+		min-width: 100%;
+	}
+
+	input{
+		min-width: 100%;
+	}
+}
+.block-column{
+flex:0 0 100px;
+}
+
+@media (max-width: 387px){
+	.nav{
+		flex-direction: column;
+		justify-self: center;
+	}
+	}
+
+img{
+	margin-bottom:-5px;
+}
+
+.infofooter {
+	margin:0px 0;
+			background-color: rgba(217,213,213, .3);
+}
+
+.me {
+	display:flex;
+	flex-direction: column;
+}
+
+.container{
+	max-width:50%;
+	align-self: center;
+	text-align: center;
+}
+.title__me {
+	text-align: center;
+	font-size: 28px;
+	padding: 30px 0;
+}
+
+.image__me{
+	display: flex;
+	justify-content: center;
+}
+.image__me img {
+	max-width:500px; 
+	max-height:400px;
+}
+
+.text__me{
+	text-align: center;
+	padding:15px 0 0 0;
+}
+
+.input__me{
+	display: flex;
+	flex-direction: column;
+}
+.input__me__container {
+	padding-top:20px;
+}
+
+.input__div{
+	align-self: center;
+}
+.title__input__me {
+	text-align: center;
+	color:rgb(164,24,156);
+	font-size: 24px;
+}
+
+.save__input__me {
+	display:flex;
+	flex-direction: column;
+}
+
+.container2 {
+	min-width: 50%;
+	align-self: center;
+	text-align: center;
+}
+
+.input__name{
+	padding-top:20px;
+}
+
+.input__name input{
+	width:100%;
+	height:35px;
+}
+
+.input__email{
+	padding-top:20px;
+}
+
+.input__email input{
+	width:100%;
+	height:35px;
+}
+
+.input__message{
+	padding-top:20px;
+}
+
+.input__message input{
+	width:100%;
+	height:35px;
+}
+
+.send{
+	margin-top:30px;
+	background: rgba(218,213,213, .5);
+	border: solid black 2px;
+	min-height:40px;
+	width:100%;
+	margin-bottom:50px;
+}
+
+.send a{
+	color:black;
+}
