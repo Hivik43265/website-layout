@@ -3,12 +3,13 @@
 }
 
 .main{
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .wrapper{
-	max-width: 100%;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
 }
 
 .main__cakes{
@@ -19,11 +20,10 @@
 
 .headers{
 	height: 82px;
-	position: relative;
 	display: flex;
 	top:47px;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .text{
@@ -31,7 +31,7 @@
 }
 
 .headers__name{
-	margin-left: 105px;
+	margin-top: 37px;
 	font-family: "Montserrat", "Medium", sans-serif;
 	font-size: 21px;
 	font-weight: 500px;
@@ -39,8 +39,9 @@
 }
 
 .headers__address{
+	margin-top: 37px;
 	width: 200px;
-	margin-left: 320px;
+	margin-left: 400px;
 	font-family: "Montserrat", "Regular", sans-serif;
 	font-size: 12px;
 	font-weight: 400px;
@@ -60,6 +61,7 @@
 }
 
 .headers_number{
+	margin-top: 37px;
 	margin-right: 190px;
 	font-family: "Montserrat", sans-serif;
 	font-size: 20px;
@@ -84,16 +86,15 @@
 }
 
 .icon{
-	position: relative;
+/*	position: relative;*/
 	max-width: 30px;
 	max-height: 30px;
 	margin-right: 50px;
 }
 
 .text-body{
-	position: relative;
 	top:150px;
-	left:130px;
+	margin-top: 150px;
 }
 
 .text-title-button button{
@@ -127,7 +128,7 @@
 	line-height: 34.36px;
 }
 
-.button-catalog button{
+.button-catalog a{
 	border-radius: 8px;
 	background: #FED84C;
 	border:0;
@@ -136,6 +137,11 @@
 	font-size: 18px;
 	font-weight: medium;
 	line-height: 27.36px;
+	text-decoration:none;
+}
+
+.button-catalog a:visited{
+	color:#2E363E;
 }
 
 .button-catalog p{
@@ -145,4 +151,8 @@
 	font-size: 15px;
 	font-weight: regular;
 	line-height: 24px;
+}
+
+.button-catalog a:hover{
+	background:#ffcf40 ;
 }
