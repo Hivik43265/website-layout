@@ -6,15 +6,11 @@ body{
 	overflow-x:hidden;
 }
 
-.main{
-}
 
 .main-img{
 	background: url("../image/bg.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	padding-bottom: 150px;
-	position: relative;
 }
 
 .wrapper{
@@ -156,7 +152,6 @@ body{
 	font-family: "Montserrat", sans-serif;
 	font-size: 18px;
 	font-weight: medium;
-	line-height: 27.36px;
 	text-decoration:none;
 }
 
@@ -179,29 +174,37 @@ body{
 
 .title-text{
 	text-align: center;
-	position: relative;
-	top:250px;
+	margin-top:300px;
 	bottom: 80px;
 	color:#2E363E;
 	font-family: "Montserrat", sans-serif;
 	font-weight: medium;
 	font-size: 48px;
-	line-height: 60px;
 	letter-spacing: -1px;
 }
 
 .catalog-flex{
 	display: flex;
 	flex-direction: row;
-	margin-top:180px;
+	margin-top:80px;
 	flex-wrap: wrap;
+	margin-left: -20px;
+	margin-right: -20px;
+	justify-content: center;
 }
 
 .catalog{
+	max-width: 300px;
 	display: flex;
 	flex-direction: column;
 	flex:1 1 33.333%;
-	padding-left: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+.catalog-img img{
+	max-width: 300px;
 }
 
 .catalog-title{
