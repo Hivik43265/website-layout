@@ -39,6 +39,12 @@ body{
 	justify-content: space-between;
 }
 
+.container{
+	display: flex;
+	flex-direction: row;
+	gap: 67px;
+}
+
 .text{
 	color: white;
 }
@@ -53,8 +59,6 @@ body{
 
 .headers__address{
 	margin-top: 37px;
-	width: 200px;
-	margin-left: 400px;
 	font-family: "Montserrat", "Regular", sans-serif;
 	font-size: 12px;
 	font-weight: 400px;
@@ -75,7 +79,6 @@ body{
 
 .headers_number{
 	margin-top: 37px;
-	margin-right: 190px;
 	font-family: "Montserrat", sans-serif;
 	font-size: 20px;
 	font-weight: 700px;
@@ -102,6 +105,12 @@ body{
 	max-width: 30px;
 	max-height: 30px;
 	margin-right: 50px;
+}
+
+.container-text-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .text-body{
@@ -258,13 +267,6 @@ body{
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
-
-/*.contain-img2{
-	background: url("../image/obl-1.svg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-/*	max-height: 345px;*/
-
 
 .content{
 	background:#081130 ;
