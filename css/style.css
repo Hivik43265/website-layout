@@ -391,7 +391,61 @@ li::marker{
 	border-radius: 5px;
 }
 
-.slide-body{
+.content-slides {
+	background: #081130;
+}
+
+.container-slides {
+	margin-top: 200px;
+	display:grid;
+	grid-template-columns: auto;
+	grid-auto-flow :column;
+}
+
+.slide {
+	background: white;
+	border: 2px solid #E2EAF2;
+	padding-right: 195px;
+	padding-top: 20px;
+	display: grid;
+	grid-template-rows:100px 100px 200px;
+	grid-template-columns: 200px 300px 100px;
+	grid-template-areas:
+	 "A A A A   C C C C"
+    "B B B B   C C C C"
+    "B B B B   C C C C"
+    "B B B B   C C C C";
+    transition: 0.7s all;
+    justify-content: center;
+    margin-right: 50px;
+    height: 500px;
+    margin-top: 100px;
+}
+
+/*.slide-1{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}*/
+
+.title-report {
+	grid-area: A;
+	color: #2E363E;
+	font-family: Montserrat;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 42.9px;
+	align-self: start;
+}
+.text-report {
+	align-self: center;
+	grid-area: B;
+}
+.img-report {
+	align-self: center;
+	grid-area: C;
+}
+
+/*.slide-body{
 	display: in;
 }	
 
@@ -411,13 +465,13 @@ li::marker{
 	display: grid;
 /*	grid-template-rows:100px 100px 200px;*/
 /*	grid-template-columns: 200px 300px 100px;*/
-	grid-template-areas:
+/*	grid-template-areas:
 	 "A A A A   C C C C"
     "B B B B   C C C C"
     "B B B B   C C C C";
     row-gap: 24px;
 }
-
+*/
 .title-report {
 	color: #2E363E;
 	width: 460px;
@@ -451,12 +505,11 @@ li::marker{
 	display: flex;
 	justify-content: center;
 	gap:24px;
-	position: relative;
-	bottom: 730px;
+	margin-top: 50px;
 }
 
 .s-button{
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	width: 66px;
@@ -467,4 +520,4 @@ li::marker{
 
 .s-button:hover{
 	cursor: pointer;
-}
+}*/
