@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Пирожные</title>
+	<link rel="stylesheet" href="./PhotoSwipe-master/dist/photoswipe.css">
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/reset css.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -332,9 +333,88 @@
 </div>
 
 
+<div class="photo-content">
+	<div class="title-photo-content">Сделали более 3.000 заказов за 2 года</div>
+	<div class="text-photo-content">Посмотрите фото реальных заказов из нашего instagram</div>
+	<div class="" id="my-gallery">
+	  <div class="body-photo-content row" id="my-gallery">
+	  	<div class="column">
+	  		<div class="photo">
+		  		<a href="./image/photo.png" data-pswp-width="951" data-pswp-height="666" target="_blank">
+		      <img src="./image/photo.png">
+		      </a>
+		   </div>
+			<div class="photo">
+		  		<a href="./image/photo-1.png" data-pswp-width="951" data-pswp-height="666" target="_blank">
+		      <img src="./image/photo-1.png">
+		      </a>
+		   </div>
+				<div class="photo">
+		  		<a href="./image/photo-2.png" data-pswp-width="951" data-pswp-height="666" target="_blank">
+		      <img src="./image/photo-2.png">
+		      </a>
+		   </div>
+			</div>
+		</div>
+		<div class="body-photo-content row">
+			<div class="column">
+				<div class="photo">
+		  		<a href="./image/photo-3.png" data-pswp-width="951" data-pswp-height="666" target="_blank">
+		      <img src="./image/photo-3.png">
+		      </a>
+		   </div>
+				<div class="photo">
+		  		<a href="./image/photo-4.png" data-pswp-width="951" data-pswp-height="666" target="_blank">
+		      <img src="./image/photo-4.png">
+		      </a>
+		   </div>
+		   <div class="photo">
+		  		<a href="./image/photo-5.png" data-pswp-width="951" data-pswp-height="666" target="_blank">
+		      <img src="./image/photo-5.png">
+		      </a>
+		   </div>
+			</div>
+		</div>
+		<div class="body-photo-content row">
+			<div class="column">
+				<div class="photo">
+		  		<a href="./image/photo-6.png" data-pswp-width="951" data-pswp-height="666" target="_blank">
+		      <img src="./image/photo-6.png">
+		      </a>
+		   </div>
+				<div class="photo">
+		  		<a href="./image/photo-7.png" data-pswp-width="951" data-pswp-height="666" target="_blank">
+		      <img src="./image/photo-7.png">
+		      </a>
+		   </div>
+		   <div class="photo">
+		  		<a href="./image/photo-8.png" data-pswp-width="951" data-pswp-height="666" target="_blank">
+		      <img src="./image/photo-8.png">
+		      </a>
+		   </div>
+			</div>
+		</div>
+	</div>
+</div>
 
-  <script src="./js/swiper-bundle.min.js"></script>
-  <script src="./js/index.js"></script>
+<script type="module">
+import PhotoSwipeLightbox from '/PhotoSwipe-master/dist/photoswipe-lightbox.esm.js';
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery:'#my-gallery',
+  children:'a',
+
+  initialZoomLevel: 'fit',
+  secondaryZoomLevel: 1.5,
+  maxZoomLevel: 30,
+
+  pswpModule: () => import('/PhotoSwipe-master/dist/photoswipe.esm.js')
+});
+lightbox.init();
+</script>
+
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
 
 </body>
 </html>
