@@ -210,31 +210,26 @@
 
 
 <div class="content">
-	<div class="contain-img">
-	<img src="./image/phone-1.svg" style="max-width: 660px;object-fit: cover; position: absolute;top:280px;left:0px">
-		<div class="wrapper">
-			<div class="content-body">
-				<div class="text-body" style="margin-top: 150px;">
-					<div class="text-title-button text">
-						<button>НЕ НАШЛИ ТО ЧТО НУЖНО?</button>
-					</div>
-					<div class="text-title-content text">
-						<h1> Приготовим заказ<br>
-							  Любой сложности<br>
-							  по фото или эскизу</h1>
-					</div>
-					<div class="text-text text">
-						Загрузите фотографию или эскиз капкейков <br>
-						и мы рассчитаем стоимость за 30 минут
-					</div>
-					<div class="button-catalog text">
-							<a href="#">Загрузить фотографию</a>
-					</div>
+	<div class="wrapper">
+		<div class="content-body">
+			<div class="text-body">
+				<div class="text-title-button text">
+					<button>НЕ НАШЛИ ТО ЧТО НУЖНО?</button>
+				</div>
+				<div class="text-title-content text">
+					<h1> Приготовим заказ<br>
+						  Любой сложности<br>
+						  по фото или эскизу</h1>
+				</div>
+				<div class="text-text text" style="margin-bottom: 80px;">
+					Загрузите фотографию или эскиз капкейков <br>
+					и мы рассчитаем стоимость за 30 минут
+				</div>
+				<div class="button-catalog text">
+						<a href="#">Загрузить фотографию</a>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="contain-img2">
 	</div>
 </div>
 
@@ -337,7 +332,7 @@
 	<div class="title-photo-content">Сделали более 3.000 заказов за 2 года</div>
 	<div class="text-photo-content">Посмотрите фото реальных заказов из нашего instagram</div>
 	<div class="" id="my-gallery">
-	  <div class="body-photo-content row" id="my-gallery">
+	  <div class="body-photo-content row">
 	  	<div class="column">
 	  		<div class="photo">
 		  		<a href="./image/photo.png" data-pswp-width="951" data-pswp-height="666" target="_blank">
@@ -397,8 +392,40 @@
 	</div>
 </div>
 
+<div class="form">
+	<div class="wrapper">
+		<div class="body-form">
+			<div class="body-form-title">Чтобы сделать заказ, укажите ваш телефон</div>
+			<div class="body-form-text">Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</div>
+			<div class="body-form-form">
+				<form action="">
+					<label for="phone" class="sr-only">Номер телефона</label>
+					<input type="tel" id="phone" name="phone" placeholder="Номер телефона" size="1" required>
+					<button type="submit" name="submit" class="button-form">Сделать заказ</button>
+					<input type="checkbox" id="ps-info" name="personal-info-checkbox" required>
+					<label for="ps-info" class="ps-info">
+						Нажимая на кнопку, вы соглашаетесь с
+						<a href=""> условиями обработки персональных данных</a>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="info-footer">
+		<ul class="footer-list">
+			<li class="footer-text"><a href="#">Согласие на обработку данных</a></li>
+			<li class="footer-text"><a href="#">Служба поддержки</a></li>
+			<li class="footer-text"><a href="#">Политика конфиденциальности</a></li>
+		</ul>
+		<p class="footer-company">© nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000</p>
+	</div>
+</footer>
+
 <script type="module">
-import PhotoSwipeLightbox from '/PhotoSwipe-master/dist/photoswipe-lightbox.esm.js';
+import PhotoSwipeLightbox from './PhotoSwipe-master/dist/photoswipe-lightbox.esm.js';
 
 const lightbox = new PhotoSwipeLightbox({
   gallery:'#my-gallery',
@@ -408,7 +435,7 @@ const lightbox = new PhotoSwipeLightbox({
   secondaryZoomLevel: 1.5,
   maxZoomLevel: 30,
 
-  pswpModule: () => import('/PhotoSwipe-master/dist/photoswipe.esm.js')
+  pswpModule: () => import('./PhotoSwipe-master/dist/photoswipe.esm.js')
 });
 lightbox.init();
 </script>
