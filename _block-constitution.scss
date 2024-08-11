@@ -1,0 +1,128 @@
+.constitution{
+
+    margin-bottom: 100px;
+
+    &-man div{
+        width: 375px;
+        height: 375px;
+        background: rgba(51, 131, 110, 1);
+        border-radius: 360px;
+        border: none;
+        float: right;
+        position: relative;
+
+        &::before{
+            content: "";
+            background: url("../img/man.svg");
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 375px;
+            height: 375px;
+        }
+
+        &::after{
+            content: "";
+            background: url("../img/man-1.svg");
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 375px;
+            height: 375px;
+            left: 34px;
+            bottom: 24px;
+        }
+    }
+
+    .constitution-button button{
+        margin-top: 30px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .constitution-number{
+        margin-bottom: 40px;
+        margin-top: 10px;
+        margin-left:30px;
+        font-size: 24px;
+        font-weight: 700;
+        color: rgba(51, 131, 110, 1);
+
+        & p{
+            font-family: Open Sans;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    &-parameters{
+        list-style: none;
+
+        & li{
+            padding-left: 30px;
+            position: relative;
+
+            &:first-child::before{
+                content: "";
+                background: url("../img/clock.svg");
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                left:-5px;
+            }
+
+            &:nth-child(2){
+                margin-left: 30px;
+            }
+
+            &:nth-child(2)::before{
+                content: "";
+                background: url("../img/money.svg");
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                left:-5px;
+            }
+            
+            &:nth-child(3){
+                margin-right: 30px;
+            }
+
+            &:nth-child(3)::before{
+                content: "";
+                background: url("../img/lock.svg");
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                left:-5px;
+            }
+
+            &:last-child::before{
+                content: "";
+                background: url("../img/money.svg");
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                left:-5px;
+            }
+            
+        }
+
+    }
+}
+
+
+.title{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 51.75px;
+    color: rgba(20, 10, 50, 1);
+}
+
+.text{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+}

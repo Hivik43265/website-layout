@@ -1,0 +1,94 @@
+a {
+    text-decoration: none;
+}
+
+*{
+    font-family: "Open Sans", sans-serif;
+}
+
+.header{
+    margin-top: 20px;
+
+    &-inner{
+        align-items: center;
+    }
+
+    &-search-input{
+        margin-left: 50px;
+        margin-right: 75px;
+        position: relative;
+
+        & input{
+            width: 420px;
+            height: 50px;
+            background: rgba(47, 43, 67, 0.04);
+            border-radius: 10px;
+            border:none;
+            color: rgba(47, 43, 67, 0.4);
+            font-size: 16px;
+            font-weight: 400;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        &::after{
+            content: "";
+            background: url("../img/search.svg");
+            height: 24px;
+            width: 24px;
+            position: absolute;
+            top:14px;
+            left:380px;
+        }
+    }
+
+    &-chat-questions button{
+        padding: 10px 10px 10px 40px;
+        border:none;
+        border-radius: 10px;
+        background: rgba(51, 131, 110, 1);
+        font-size: 16px;
+        font-weight: 600;
+        color:rgba(255, 255, 255, 1);
+        position: relative;
+        transition: all 0.3s;
+
+        &:hover{
+            background: rgba(129, 210, 188, 1);
+        }   
+
+        &::before{
+            content: "";
+            background: url("../img/chat-bubble-question.png");
+            height: 24px;
+            width: 24px;
+            position: absolute;
+            left:10px;
+        }
+    }
+}
+
+.number{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(20, 10, 50, 1);
+    padding-top: 15px;
+
+    & p {
+        font-size: 14px;
+        font-weight: 400;
+        color:rgba(47, 43, 67, 0.5);
+    }
+}
+
+.button button{
+    padding: 10px 10px 10px 40px;
+    border:none;
+    border-radius: 10px;
+    background: rgba(51, 131, 110, 1);
+    font-size: 16px;
+    font-weight: 600;
+    color:rgba(255, 255, 255, 1);
+    position: relative;
+    transition: all 0.3s;
+}

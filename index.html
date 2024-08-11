@@ -4,213 +4,184 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/reset css.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src='https://kit.fontawesome.com/31d19d595f.js'></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-	<script src="js/script.js"></script>
 </head>
 <body>
-
-<div class="wrapper">
-
-	<div class="navhead">
-		<div class="head__body">
-			<div class="head__logo space-letter">
-				<span>БР</span> Архитекторов
+	<div class="container">
+		<header class="header">
+			<div class="header-inner row">
+				<div class="header-logo logo col-2">
+					<a href="#"><img src="img/Frame.png" alt="Лого"></a>
+				</div>
+				<div class="header-search-input col-4">
+					<input placeholder="Я хочу найти...">
+				</div>
+				<div class="header-chat-questions col-2 button">
+					<button>Задать вопрос</button>
+				</div>
+				<div class="header-number number col">
+					8 800 302-92-70
+					<p>Бесплатный звонок юристу 24/7</p>
+				</div>
 			</div>
-			<div class="burger">
-				<span></span>
+		</header>
+
+		<section class="menu row">
+			<div class="menu-list-button-call menu__button col-2">
+				<button>Заказать звонок</button>
 			</div>
-			<div class="header__menu">
-				<ul class="header__list space-letter">
-					<li>
-						<a href="#project" class="header__link">Проекты</a>
+			<div class="menu-list-button-telegram menu__button col-2">
+				<button>Telegram</button>
+			</div>
+			<ul class="menu-list col row">
+				<li class="col-1"><a href="#">Отзывы</a></li>
+				<li class="col-1"><a href="#">Вопросы</a></li>
+				<li class="col-2"><a href="#">Наши юристы</a></li>
+				<li class="col-1"><a href="#">Статьи</a></li>
+				<li class="col-1"><a href="#">Контакты</a></li>
+				<li class="col"><a href="#">Вход / Регистрация</a></li>
+			</ul>
+			<div class="main-site">Главная / Горячая линия</div>
+		</section>
+
+		<section class="constitution row">
+			<div class="constitution-body col-7">
+				<div class="constitution-title title">
+				Горячая линия по оказанию юридической помощи онлайн
+				</div>
+				<div class="constitution-text text">
+					Профессиональная помощь доступна круглосуточно – 
+					заявки обрабатываются в любое время дня и ночи. 
+					Обращаясь к специалистам «100 Юристов», вы можете 
+					рассчитывать на прозрачные, понятные условия сотрудничества
+				</div>
+				<div class="row">
+					<div class="constitution-button button col-4">
+						<button>Задать вопрос юристу</button>
+					</div>
+					<div class="constitution-number number col-5">
+						8 800 302-92-70
+					<p>Бесплатный звонок юристу 24/7</p>
+					</div>
+					<ul class="constitution-parameters row">
+						<li class="col">Круглосуточно</li>
+						<li class="col">Бесплатно</li>
+						<li class="col">Конфиденциально</li>
+						<li class="col">Быстро</li>
+					</ul>
+				</div>
+			</div>
+			<div class="constitution-man col">
+				<div></div>
+			</div>
+		</section>
+
+		<section class="legal-help row">
+			<div class="info-legal col-12 info-block">
+				<div class="info-legal-title title">
+					Юридическая помощь
+				</div>
+				<div class="info-legal-text text">
+					Срочно понадобились услуги профессионального юриста или 
+						адвоката? Решение есть! Наша горячая юридическая линия – 
+						возможность оперативно, абсолютно бесплатно получить ответ 
+						на любой вопрос. Теперь не нужно записываться на офлайн-прием 
+						и тратить время на поездку и очереди перед кабинетом.
+						<br><br>
+						Профессиональная помощь доступна круглосуточно – заявки 
+						обрабатываются в любое время дня и ночи. Обращаясь к 
+						специалистам «100 Юристов», вы можете рассчитывать на 
+						прозрачные, понятные условия сотрудничества.
+				</div>
+			</div>
+			<div class="get-info-legal col-12">
+				<div class="get-info-legal-title title">
+					Как получить бесплатную юридическую консультацию?
+				</div>
+				<div class="get-info-legal-text text">
+					Задайте вопрос юристу бесплатно круглосуточно и без регистрации
+				</div>
+				<ul class="get-info-legal-list row">
+					<li class="col">
+						<p class="get-info-legal-list-text text">
+							По телефону горячей линии
+						</p>
+						<p class="get-info-legal-list-number number">
+							8 800 302-92-70
+						</p>
+						<a class="get-info-legal-list-link link" href="">Заказать звонок</a>
 					</li>
-					<li>
-						<a href="#we" class="header__link">О Нас</a>
-					</li>
-					<li>
-						<a href="#contact" class="header__link">Контакты</a>
-					</li>
+					<li class="col">
+						<p class="get-info-legal-list-text text">
+							Задать свой вопрос на сайте и получить ответ онлайн
+						</p>
+						<a class="get-info-legal-list-link link" href="">Заказать вопрос</a></li>
+					<li class="col">
+						<p class="get-info-legal-list-text text">
+							Отправить запрос на обратный звонок юриста
+						</p>
+						<a class="get-info-legal-list-link link" href="">Отправить запрос</a></li>
+					<li class="col">
+						<p class="get-info-legal-list-text text">
+							Записаться на очную консультацию в офис
+						</p>
+						<a class="get-info-legal-list-link link" href="">Записаться</a></li>
 				</ul>
 			</div>
-		</div>
-	</div>
+		</section>
 
-	<div class="img__architecture">
-		<div class="img__flex">
-			<img src="image/architect.jpg">
-			<div class="block__text fs-text space-letter">
-				<span class="block__text_black">БР</span> <span class="block__text_white">Архитекторов</span>
+		<article class="online-lawyers row">
+			<div class="online-lawyers-woman col-3">
+				<div></div>
 			</div>
-		</div>
-	</div>
-
-		<div class="content">
-			<div id="project" class="project">
-				<div class="container">
-					<h2>Проекты</h2>
-					<hr>
-					<div class="flex__project-info">
-					<div class="img-house">
-						<img id="width-img" src="image/house1.jpg">
-						<div class="info__text__in-block">
-							Дачный Дом
-						</div>
-					</div>
-					<div class="img-house">
-						<img id="width-img" src="image/house2.jpg">
-						<div class="info__text__in-block">
-							Кирпичный Дом
-						</div>
-					</div>
-					<div class="img-house">
-						<img id="width-img" src="image/house3.jpg">
-						<div class="info__text__in-block">
-							Реконструированный Дом
-						</div>
-					</div>
-					<div class="img-house">
-						<img id="width-img" src="image/house4.jpg">
-						<div class="info__text__in-block">
-							Амбарный Дом
-						</div>
-					</div>
-					<div class="img-house">
-						<img id="width-img" src="image/house2.jpg">
-						<div class="info__text__in-block">
-							Дачный Дом
-						</div>
-					</div>
-					<div class="img-house">
-						<img id="width-img" src="image/house4.jpg">
-						<div class="info__text__in-block">
-							Кирпичный Дом
-						</div>
-					</div>
-					<div class="img-house">
-						<img id="width-img" src="image/house3.jpg">
-						<div class="info__text__in-block">
-							Реконструированный Дом
-						</div>
-					</div>
-					<div class="img-house">
-						<img id="width-img" src="image/house1.jpg">
-						<div class="info__text__in-block">
-							Амбарный Дом
-						</div>
-					</div>
-					</div>
+			<div class="online-lawyers-content col-4">
+				<div class="online-lawyers-content-title">
+					<p>Звоните, мы работаем 24/7</p>
+				</div>
+				<div class="online-lawyers-content-text">
+					<p>8 800 302-92-70</p>
 				</div>
 			</div>
-			<div id="we" class="we">
-				<div class="container">
-					<h2> О Нас </h2>
-						<hr>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<div class="our__team">
-							<div class="flex__our__team">
-								<div class="info__team">
-								<div class="photo__team">
-									<img id="width-img" src="image/team1.jpg">
-								</div>
-								<div class="title__team">
-									<h2>Джейн Фостер</h2>
-								</div>
-								<div class="post__team">
-									Генеральный Директор и Основатель
-								</div>
-								<div class="text__team">
-									Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-								</div>
-								<div class="button__contact__team">
-									<a href="">Контакты</a>
-								</div>
-							 </div>
-							 <div class="info__team">
-							 <div class="photo__team">
-									<img id="width-img" src="image/team2.jpg">
-								</div>
-								<div class="title__team">
-									<h2>Джон Красинский</h2>
-								</div>
-								<div class="post__team">
-									Главный Архитектор
-								</div>
-								<div class="text__team">
-									Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-								</div>
-								<div class="button__contact__team">
-									<a href="">Контакты</a>
-								</div>
-							</div>
-							<div class="info__team">
-							 <div class="photo__team">
-									<img id="width-img" src="image/team3.jpg">
-								</div>
-								<div class="title__team">
-									<h2>Майк Булин</h2>
-								</div>
-								<div class="post__team">
-									Зам. Архитектор
-								</div>
-								<div class="text__team">
-									Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-								</div>
-								<div class="button__contact__team">
-									<a href="">Контакты</a>
-								</div>
-							</div>
-							<div class=" info__team__last-child">
-							 <div class="photo__team">
-									<img id="width-img" src="image/team4.jpg">
-								</div>
-								<div class="title__team">
-									<h2>Алекс Говард</h2>
-								</div>
-								<div class="post__team">
-									Помошник зам. Архитектора
-								</div>
-								<div class="text__team">
-									Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-								</div>
-								<div class="button__contact__team">
-									<a href="">Контакты</a>
-								</div>
-							</div>
-						</div>
+			<div class="online-lawyers-ico col-3">
+				<div class="online-lawyers-ico-online-now">
+					N юриста сейчас онлайн
+				</div>
+				<div class="online-lawyers-ico-icon lawyers-icon">
+					<img src="img/Ellipse.png">
+					<img src="img/Ellipse-2.png">
+					<img src="img/Ellipse-3.png">
+					<img src="img/Ellipse-4.png">
+					<img src="img/Ellipse-5.png">
+					<img src="img/Ellipse-6.png">
+				</div>
+			</div>
+		</article>
+
+		<div class="popup_background"></div>
+		<div class="popup">
+			<div class="popup-body row">
+				<div class="popup-woman-elipse col-3">
+					<div></div>
+				</div>
+				<div class="online-lawyers-ico-icon lawyers-icon col-3" >
+					<img src="img/Ellipse.png">
+					<img src="img/Ellipse-2.png">
+					<img src="img/Ellipse-3.png">
+					<img src="img/Ellipse-4.png">
+					<img src="img/Ellipse-5.png">
+					<img src="img/Ellipse-6.png">
+				</div>
+			<!-- <p class="online-lawyers-ico-online-now col" style="color:black; margin-top: 170px;margin-left:25px;">N юриста сейчас онлайн</p> -->
+				<div class="popup-close col">
+					<span></span>
 				</div>
 			</div>
 		</div>
+
+
 	</div>
 
-	<div class="footer">
-		<div class="container">
-			<div class="contact__body">
-				<div class="contact__title">
-					<h2 id="contact">Контакты</h2>
-				</div>
-				<hr>
-				<div class="contact__text">
-					Давайте свяжемся и поговорим о вашем следующем проекте.
-				</div>
-				<div class="contact__input">
-					<input type="text" name="name" placeholder="Имя">
-					<br>
-					<input type="text" name="email" placeholder="Почта">
-					<br>
-					<input type="text" name="question" placeholder="Вопрос">
-					<br>
-					<input type="text" name="coment" placeholder="Комментарий">
-				</div>
-				<div class="contact__button">
-					<a href="">ОТПРАВИТЬ СООБЩЕНИЕ</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</div>
 </body>
+
+<script  type="text/javascript" src="js/index.js"></script>
 </html>

@@ -1,0 +1,95 @@
+.online-lawyers{
+
+    cursor: pointer;
+    
+    margin-top: 80px !important;
+    align-content: center !important;
+
+    background: rgba(51, 131, 110, 1);
+    border-radius: 20px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+
+    &-woman div{
+        width: 400px;
+        height: 400px;
+        background: rgba(20, 10, 50, 0.2);
+        border-radius: 360px;
+        position: absolute;
+        left: -108px;
+        top: 31px;
+
+        &::before{
+            content: "";
+            background: url("../img/woman-working-call-center.svg");
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            left:150px;
+            top: -30px;
+        }
+    }
+
+    &-content{
+        &-title, &-text{
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+            align-items: center;
+        }
+
+        &-title{
+            font-size: 24px;
+            font-weight: 600;      
+        }
+
+        &-text{
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: -0.03em;         
+        }
+    }
+
+    &-ico{
+        margin-left: 100px;
+
+        &-online-now{
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        &-icon{
+            position: relative;
+            & img{
+                position: absolute;
+            }
+
+            & img:nth-child(2){
+                z-index:2;
+                left: 35px;
+            }
+
+            & img:nth-child(3){
+                z-index:2;
+                left: 70px;
+            }
+
+            & img:nth-child(4){
+                z-index:2;
+                left: 105px;
+            }
+
+            & img:nth-child(5){
+                z-index:2;
+                left: 140px;
+            }
+
+            & img:nth-child(6){
+                z-index:2;
+                left: 175px;
+            }
+        }
+    }
+}

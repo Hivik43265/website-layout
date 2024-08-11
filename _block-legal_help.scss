@@ -1,0 +1,80 @@
+.info-legal{
+
+    .info-legal-text{
+        margin-top:20px;
+        margin-bottom: 80px;
+    }
+}
+
+.get-info-legal{
+    &-text{
+        margin-bottom: 30px;
+    }
+
+    &-list{
+        list-style: none;
+        padding: 0;
+
+        .number{
+            padding: 0;
+        }
+
+        .text{
+            margin-top: 50px;
+        }
+
+        & li{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid rgba(47, 43, 67, 0.15);
+            border-radius: 20px;
+            padding: 20px;
+            margin-right: 20px;
+            position: relative;
+
+            &:first-child::before{
+                content: "";
+                position: absolute;
+                background: url("../img/phone-green-ico.svg");
+                width: 24px;
+                height: 24px;
+                background-repeat: no-repeat;
+            }
+
+            &:nth-child(2)::before{
+                content: "";
+                position: absolute;
+                background: url("../img/reply-ico.svg");
+                width: 24px;
+                height: 24px;
+                background-repeat: no-repeat;
+            }
+
+            &:nth-child(3)::before{
+                content: "";
+                position: absolute;
+                background: url("../img/chat-lines-ico.svg");
+                width: 24px;
+                height: 24px;
+                background-repeat: no-repeat;
+            }
+
+            &:last-child::before{
+                content: "";
+                position: absolute;
+                background: url("../img/building-ico.svg");
+                width: 24px;
+                height: 24px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.link{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600; 
+    color: rgba(51, 131, 110, 1);
+}
