@@ -16,6 +16,7 @@ const scrollbarWidth = `${w_width - document.documentElement.clientWidth}`;
 
 const popup_close = document.querySelector(".popup-close");
 
+const popup_body = document.querySelector(".popup-body");
 
 online_lawyers.addEventListener("click", function showPopup(){
 
@@ -29,19 +30,28 @@ online_lawyers.addEventListener("click", function showPopup(){
         popup.style.display = "block"; 
         document.body.style.overflow = 'hidden';
         document.body.style.paddingRight = `${scrollbarWidth}px`;
-
     }
 });
 
 popup_close.addEventListener("click", function hidePopup(){
-
-
-        document.body.style.overflow ="";
-        document.body.style.paddingRight = ""
-        popup_background.style.display ="none";
-        popup.style.display = "none";   
-
-
-
+        popup_body.style.animationName ="popup-inner-transformate-reverse";
+        popup.style.animationName ="popup-transformate-reverse";
+       
+        setTimeout(function(){
+            document.body.style.overflow =""; 
+            document.body.style.paddingRight = ""
+            popup_background.style.display ="none";
+            popup.style.display = "none";  
+            popup.style.animationName ="popup-transformate";
+            popup_body.style.animationName ="popup-inner-transformate";
+        }, 700);
 });
 
+
+const input = document.querySelectorAll("#popup-input");
+
+popup_close.addEventListener("click", function inputClear(){
+    for(let i=0;i<input.length;i++){
+        input[i].value = "";
+    }
+});

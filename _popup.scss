@@ -1,4 +1,6 @@
 .popup{
+    animation-name: popup-transformate;
+    animation-duration: 1s;
     display: none;
     width: 900px;
     height: 400px;
@@ -10,45 +12,105 @@
     overflow: hidden;
     border-radius: 20px;
 
+
+    .popup-title{
+        margin-left: 280px;
+        height: 42%;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+
+        & p{
+            align-self: flex-end;
+        }
+    }
+
+    .popup-body{
+        height: 100%;
+        animation-name:popup-inner-transformate;
+        animation-duration: 3s;
+    }
+
     .lawyers-icon{
 
         margin-left:50px;
-        margin-top: 150px;
+
     }
 
-    &-body{
-        height: 100%;
+    &-main{
+        margin-left: 230px !important;
+        height: 20%;
     }
 
     &-close{
-        height: 10px;
-        top:35px;
+        height: 25px;
+        top:25px;
+        align-items: start;
+        max-width:25px !important;
         position: relative;
+        // left:350px;
+        cursor: pointer;
 
         &::before{
             content: "";
             height: 3px;
-            width: 25px;
-            background: black;
+            width: 24px;
+            background: rgba(51, 131, 110, 1);
             position: absolute;
-            left: 350px;
-            top: 0px;
+            left: 0px;
+            top: 10px;
             rotate: -45deg;
-            cursor: pointer;
         }
 
         span{
             height: 3px;
-            width: 25px;
-            background: black;
+            width: 24px;
+            background: rgba(51, 131, 110, 1);
             position: absolute;
-            left: 350px;
-            top: 0px;
+            left: 0px;
+            top: 10px;
             rotate: 45deg;
-            cursor: pointer;
         }       
     }
 
+    &-form form{
+        margin-left: 285px !important;
+        margin-top: 30px !important;
+        gap:15px;
+
+        .input-tel,.input-name{
+
+            position: relative;
+    }
+
+    .input-tel input, .input-name input{
+        width: 205px;
+        height: 55px;
+        background: rgb(255, 255, 255);
+        border-radius:10px;
+        border: 1px solid rgba(47, 43, 67, 0.15);
+        color: rgba(20, 10, 50, 1);
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+
+        & button{
+            height: 55px;
+            width: 137px;
+            padding: 14px 24px 16px 24px;
+            border-radius: 10px;
+            background: rgba(20, 10, 50, 1);
+            font-size: 16px;
+            font-weight: 600;
+            color:rgba(255,255,255,1);
+ 
+        }
+    }
+
+    .popup-text{
+        margin-left: 30px;
+        align-self: center;
+    }
 
     &-woman-elipse div{
         position: absolute;
@@ -64,7 +126,7 @@
             position: absolute;
             background: url("../img/woman-working-call-center-1.png");
             background-repeat: no-repeat;
-            width: 1000px;
+            width: 280px;
             height: 370px;
             left:315px;
             top:90px;
@@ -83,4 +145,102 @@
     z-index: 1;
     background: rgba(0,0,0,1);
     opacity: 0.2;
+}
+
+
+.input-tel::before{
+    content: "Номер телефона";
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    left: 15px;
+    top:0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(47, 43, 67, 0.4);
+    margin-top: 5px;
+}
+
+.input-name::before{
+    content: "Ваше имя";
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    left: 15px;
+    top:0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(47, 43, 67, 0.4);
+    margin-top: 5px;
+}
+
+.popup-agreement{
+    margin-top: 15px;
+    margin-left: 290px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(47, 43, 67, 0.4);
+
+    & a, a:visited{
+        text-decoration: none;
+        color: rgba(47, 43, 67, 0.4);
+    }
+}
+
+input:focus{
+    outline: none;
+}
+
+@keyframes popup-transformate {
+    from{
+        border-radius: 360px;
+        width: 50px;
+        height: 30px;
+    }
+    to{
+        border-radius: 20px;
+        width: 900px;
+        height: 400px;
+    }
+}
+
+@keyframes popup-transformate-reverse {
+    from{
+        border-radius: 20px;
+        width: 900px;
+        height: 400px;
+    }
+    to{
+        border-radius: 360px;
+        width: 50px;
+        height: 30px;
+    }
+}
+
+@keyframes popup-inner-transformate {
+    from{
+        opacity: 0;
+    }
+
+    20%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+}
+
+@keyframes popup-inner-transformate-reverse {
+    from{
+        opacity: 1;
+    }
+
+    5%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
 }
