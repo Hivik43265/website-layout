@@ -1,0 +1,93 @@
+.lawyers-help {
+    margin-top: 80px !important;
+}
+
+.lawyers-help-title {
+    font-size: 32px;
+    line-height: 43.58px;
+    letter-spacing: -0.03em;
+    margin-bottom: 30px;
+}
+
+.lawyers-help-body {
+    gap:20px;
+    margin-top: 20px !important;
+}
+
+.lawyers-help-body-text {
+
+    width: 560px;
+    height: 180px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #2F2B4326;
+    
+    & p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #140A32;
+        align-self: center;
+        margin-left: 20px;
+    }
+
+    & span{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+}
+.lawyers-help-body-text-ico {
+        width: 110px;
+        height: 110px;
+
+    .circular-ico{
+        margin-left: 30px;
+        border-radius: 360px;
+        width: 110px;
+        height: 110px;
+        background: #EBF2F0;
+        position: relative;
+    }
+}
+
+.ico-1::before{
+    content: "";
+    background: url("../img/phone.png");
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 35px;
+    top:35px;
+}
+
+.ico-2::before{
+    content: "";
+    background: url("../img/book.png");
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 35px;
+    top:35px;
+}
+
+.ico-3::before{
+    content: "";
+    background: url("../img/take.png");
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 35px;
+    top:35px;
+}
+
+.ico-4::before{
+    content: "";
+    background: url("../img/sucess.png");
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 35px;
+    top:35px;
+}

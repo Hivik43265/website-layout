@@ -1,0 +1,100 @@
+.questions_lawyers {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.questions_lawyers-title {
+    font-size: 32px !important;
+    margin-bottom: 30px;
+}
+
+.questions_lawyers-body {
+    gap:5px;
+}
+
+.all-lawyers {
+}
+
+.lawyer {
+    width: 463px;
+    height: 124px;
+    padding: 20px 20px 20px 110px;
+    border-radius: 20px;
+    border: 1px solid #2F2B4326;
+    position: relative;
+    margin-bottom: 15px;
+
+    &::before{
+        content: "";
+        background: url("../img/lawyer.png") no-repeat;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left:20px;
+        top:25px;
+    }
+}
+
+.lawyer-name {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin: 0px !important;
+    line-height: 24.51px !important;
+}
+
+.lawyer-city {
+    margin: 0px !important;
+    
+}
+
+.lawyer-N_consultation {
+    color: #2F2B4380;
+    margin: 0 !important;
+}
+
+.lawyers-all{
+    width: 463px !important;
+    padding: 16px 0;
+    .show-text{
+        margin: 0 !important;
+    }
+}
+
+.questions-lawyers{
+    cursor: default !important;
+    height: 612px !important;
+    padding: 40px 40px 60px 40px !important;
+}
+
+.questions-lawyers-title{
+    font-size: 32px !important;
+    color: rgb(255,255,255) !important;
+}
+
+.questions-lawyers-text{
+    margin: 0 !important;
+    color: #FFFF;
+}
+
+.lawyer-question-form{
+    gap:15px;
+}
+
+.lawyer-question-agreement{
+    margin-top: 15px;
+}
+
+.form-text-area textarea{
+    width: 100%;
+    height: 213px;
+    background: rgb(255, 255, 255);
+    border-radius:10px;
+    border: 1px solid rgba(47, 43, 67, 0.15);
+    color: rgba(20, 10, 50, 1);
+    padding-left: 15px;
+    padding-top: 5px;
+
+    &:focus{
+        outline: none;
+    }
+}

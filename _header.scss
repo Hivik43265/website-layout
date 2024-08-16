@@ -43,19 +43,6 @@ a {
     }
 
     &-chat-questions button{
-        padding: 10px 10px 10px 40px;
-        border:none;
-        border-radius: 10px;
-        background: rgba(51, 131, 110, 1);
-        font-size: 16px;
-        font-weight: 600;
-        color:rgba(255, 255, 255, 1);
-        position: relative;
-        transition: all 0.3s;
-
-        &:hover{
-            background: rgba(129, 210, 188, 1);
-        }   
 
         &::before{
             content: "";
@@ -91,4 +78,18 @@ a {
     color:rgba(255, 255, 255, 1);
     position: relative;
     transition: all 0.3s;
+
+    &:hover{
+        background: rgba(129, 210, 188, 1);
+    }   
+}
+
+.button button{
+    padding: 10px 10px 10px 40px;
+    border:none;
+    border-radius: 10px;
+    background: rgba(51, 131, 110, 1);
+    font-size: 16px;
+    font-weight: 600;
+    color:rgba(255, 255, 255, 1);
 }

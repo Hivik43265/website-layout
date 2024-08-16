@@ -1,0 +1,56 @@
+.lawyers-100 {
+
+    margin-top: 80px;
+
+}
+.body-lawyers {
+    cursor: default !important;
+    background: #2F2B430A !important;
+
+    & form{
+        gap:15px;
+    }
+}
+
+.title-lawyers {
+    font-size: 32px !important;
+    line-height: 43.58px !important; 
+    align-self: center;
+    text-align: left;
+    margin-left:50px;
+}
+
+.input-100-lawyers{
+    align-self: end;
+}
+
+.lawyers-100-button {
+    width: 207px !important;
+    height: 56px !important;
+}
+.lawyers-100-button {
+    background: #33836E !important;
+    align-self: end;
+    
+    &:hover{
+        background: rgba(129, 210, 188, 1) !important;
+    } 
+}
+.phone-100-lawyers {
+    position: relative;
+    margin-left: -50px;
+
+    &::before{
+        content: "";
+        background: url("../img/phone-100_lawyers.svg");
+        width: 275px;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        top:0;
+    }
+}
+
+.lawyers-100-agreement{
+    color: #2F2B4366;
+}

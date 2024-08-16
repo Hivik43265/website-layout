@@ -1,0 +1,32 @@
+.seo-text {
+    margin-top: 80px;
+}
+.seo-text-title {
+    font-size: 32px !important;
+    line-height: 43.58px !important;
+}
+.seo-text-text {
+    display: block;
+    height: 165px;
+    overflow: hidden;
+    transition: all 2s;
+    margin-top: 20px;
+
+    & p{
+        position: relative;
+    }
+}
+
+.button-show-text{
+    height: 56px !important;
+    background: #E0ECE9 !important;
+    text-align: center;
+    margin-top: 15px !important;
+    
+    & p{
+        font-size: 16px;
+        font-weight: 600;
+        color: #33836E;
+        margin-top: 16px;
+    }
+}

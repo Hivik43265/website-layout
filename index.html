@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
 				<div class="header-search-input col-4">
 					<input placeholder="Я хочу найти...">
 				</div>
-				<div class="header-chat-questions col-2 button">
+				<div class="header-chat-questions button col-2">
 					<button>Задать вопрос</button>
 				</div>
 				<div class="header-number number col">
@@ -130,15 +131,15 @@
 			</div>
 		</section>
 
-		<article class="online-lawyers row">
+		<article class="online-lawyers green-block row">
 			<div class="online-lawyers-woman col-3">
 				<div></div>
 			</div>
-			<div class="online-lawyers-content col-4">
-				<div class="online-lawyers-content-title">
+			<div class="online-lawyers-content green-block-content col-4">
+				<div class="online-lawyers-content-title green-block-title">
 					<p>Звоните, мы работаем 24/7</p>
 				</div>
-				<div class="online-lawyers-content-text">
+				<div class="online-lawyers-content-text green-block-text">
 					<p>8 800 302-92-70</p>
 				</div>
 			</div>
@@ -191,9 +192,9 @@
 						<div class="input-name col-4">
 							<input id="popup-input" name="name" type="text" class="col-1" required>
 						</div>
-						<button type="button col">Отправить</button>
+						<button class="col-3 button-1" type="button">Отправить</button>
 					</form>
-					<div class="popup-agreement">
+					<div class="popup-agreement agreement">
 						Отправляя вопрос, вы соглашаетесь с условиями 
 						<a href="#">Пользовательского соглашения</a>
 					</div>
@@ -201,10 +202,541 @@
 		</div>
 		</div>
 
+		<section class="lawyers-help row"> 
+			<div class="lawyers-help-title title col">
+				Как мы сможем помочь вам? 
+			</div>
+			<div class="lawyers-help-body row">
+				<div class="lawyers-help-body-text col row">
+					<div class="lawyers-help-body-text-ico col-3">
+						<div class="circular-ico ico-1"></div>
+					</div>
+						<p class="col-8">Провести бесплатную консультацию на личном приёме 
+						у нас в офисе, по телефону горячей линии 
+						<span> 800 302-92-70 </span>, в онлайн чате или 
+						по WhatsApp и Telegram</p>
+				</div>
+				<div class="lawyers-help-body-text col row">
+					<div class="lawyers-help-body-text-ico col-3">
+						<div class="circular-ico ico-2"></div>
+					</div>
+						<p class="col-8">Провести бесплатную консультацию на личном приёме 
+						у нас в офисе, по телефону горячей линии 
+						<span> 800 302-92-70 </span>, в онлайн чате или 
+						по WhatsApp и Telegram</p>
+				</div>
+			</div>
+			<div class="lawyers-help-body row">
+				<div class="lawyers-help-body-text col row">
+					<div class="lawyers-help-body-text-ico col-3">
+						<div class="circular-ico ico-3"></div>
+					</div>
+						<p class="col-8">Провести бесплатную консультацию на личном приёме 
+						у нас в офисе, по телефону горячей линии 
+						<span> 800 302-92-70 </span>, в онлайн чате или 
+						по WhatsApp и Telegram</p>
+				</div>
+				<div class="lawyers-help-body-text col row">
+					<div class="lawyers-help-body-text-ico col-3">
+						<div class="circular-ico ico-4"></div>
+					</div>
+						<p class="col-8">Провести бесплатную консультацию на личном приёме 
+						у нас в офисе, по телефону горячей линии 
+						<span> 800 302-92-70 </span>, в онлайн чате или 
+						по WhatsApp и Telegram</p>
+				</div>
+			</div>
+		</section>
 
+		<section class="lawyers-team row">
+			<div class="lawyers-team-body col">
+				<div class="lawyers-team-body-title title">
+					Почему стоит выбрать нас?
+				</div>
+				<div class="lawyers-team-body-text text">
+					Срочно понадобились услуги профессионального юриста 
+					или адвоката? Решение есть! Наша горячая юридическая 
+					линия – возможность оперативно, абсолютно бесплатно 
+					получить ответ на любой вопрос
+				</div>
+				<ul class="lawyers-team-body-properties row">
+					<li class="properties col">100 тыс 
+						<p class="text">Успешных дел</p>
+					</li>
+					<li class="properties col">10 лет
+						<p class="text">Успешных дел</p>
+					</li>
+					<li class="properties col">100
+						<p class="text">Успешных дел</p>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="lawyers-team-ico col">
+				<div class="team-ico"></div>
+			</div>
+			<div class="feedback green-block row">
+				<div class="feedback-body col-8">
+					<div class="feedback-title green-block-title">
+						Телефон горячей линии
+					</div>
+					<div class="feedback-text green-block-text">
+						8 800 302-92-70
+					</div>
+				</div>
+				<div class="feedback-form col">
+					<div class="feedback-form-title">
+						<p>	Заказать обратный звонок</p>
+					</div>
+					<form action="" class="row">
+						<div class="input-tel col-4">
+							<input id="popup-input" name="tel" type="tel" required>
+						</div>
+						<button type="button" class="feedback-button button-1 col-4">
+							Заказать звонок
+						</button>
+					</form>
+					<div class="feedback-agreement agreement">
+						Отправляя вопрос, вы соглашаетесь с условиями 
+						<a href="#">Пользовательского соглашения</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="lawyers-specialization">
+			<div class="lawyers-specialization-body">
+				<div class="lawyers-specialization-title title">
+					Специальности наших юристов
+				</div>
+				<div class="row">
+					<div class="specialization-catalog col">
+						<div class="specialization-title title">
+							По семейным делам
+						</div>
+						<div class="specialization-text text">
+							Юрист помогает в решении жилищных, 
+							образовательных, имущественных, страховых, 
+							земельных и иных споров и вопросов по данному 
+							направлению. В зависимости от ситуации 
+							возможно применение досудебного и судебного 
+							урегулирования. Более подробную информацию 
+							получите в процессе юридической консультации
+						</div>
+					</div>
+					<div class="specialization-catalog col">
+						<div class="specialization-title title">
+							По семейным делам
+						</div>
+						<div class="specialization-text text">
+							Юрист помогает в решении жилищных, 
+							образовательных, имущественных, страховых, 
+							земельных и иных споров и вопросов по данному 
+							направлению. В зависимости от ситуации 
+							возможно применение досудебного и судебного 
+							урегулирования. Более подробную информацию 
+							получите в процессе юридической консультации
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="specialization-catalog col">
+						<div class="specialization-title title">
+							По семейным делам
+						</div>
+						<div class="specialization-text text">
+							Юрист помогает в решении жилищных, 
+							образовательных, имущественных, страховых, 
+							земельных и иных споров и вопросов по данному 
+							направлению. В зависимости от ситуации 
+							возможно применение досудебного и судебного 
+							урегулирования. Более подробную информацию 
+							получите в процессе юридической консультации
+						</div>
+					</div>
+					<div class="specialization-catalog col">
+						<div class="specialization-title title">
+							По семейным делам
+						</div>
+						<div class="specialization-text text">
+							Юрист помогает в решении жилищных, 
+							образовательных, имущественных, страховых, 
+							земельных и иных споров и вопросов по данному 
+							направлению. В зависимости от ситуации 
+							возможно применение досудебного и судебного 
+							урегулирования. Более подробную информацию 
+							получите в процессе юридической консультации
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="specialization-catalog col">
+						<div class="specialization-title title">
+							По семейным делам
+						</div>
+						<div class="specialization-text text">
+							Юрист помогает в решении жилищных, 
+							образовательных, имущественных, страховых, 
+							земельных и иных споров и вопросов по данному 
+							направлению. В зависимости от ситуации 
+							возможно применение досудебного и судебного 
+							урегулирования. Более подробную информацию 
+							получите в процессе юридической консультации
+						</div>
+					</div>
+					<div class="specialization-catalog col">
+						<div class="specialization-title title">
+							По семейным делам
+						</div>
+						<div class="specialization-text text">
+							Юрист помогает в решении жилищных, 
+							образовательных, имущественных, страховых, 
+							земельных и иных споров и вопросов по данному 
+							направлению. В зависимости от ситуации 
+							возможно применение досудебного и судебного 
+							урегулирования. Более подробную информацию 
+							получите в процессе юридической консультации
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="specialization-catalog col">
+						<div class="specialization-title title">
+							По семейным делам
+						</div>
+						<div class="specialization-text text">
+							Юрист помогает в решении жилищных, 
+							образовательных, имущественных, страховых, 
+							земельных и иных споров и вопросов по данному 
+							направлению. В зависимости от ситуации 
+							возможно применение досудебного и судебного 
+							урегулирования. Более подробную информацию 
+							получите в процессе юридической консультации
+						</div>
+					</div>
+					<div class="specialization-catalog col">
+						<div class="specialization-title title">
+							По семейным делам
+						</div>
+						<div class="specialization-text text">
+							Юрист помогает в решении жилищных, 
+							образовательных, имущественных, страховых, 
+							земельных и иных споров и вопросов по данному 
+							направлению. В зависимости от ситуации 
+							возможно применение досудебного и судебного 
+							урегулирования. Более подробную информацию 
+							получите в процессе юридической консультации
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="lawyers-100">
+			<div class="body-lawyers green-block row">
+				<div class="title-lawyers title col-4">
+					Задайте вопрос юристу бесплатно
+				</div>
+				<form class="col-5 row">
+					<div class="input-100-lawyers input-tel col-5">
+						<input id="popup-input" name="tel" type="tel" required>
+					</div>
+					<button type="button" class="lawyers-100-button button-1 col-3">
+						Заказать звонок
+					</button>
+					<div class="lawyers-100-agreement agreement col-8">
+						Отправляя вопрос, вы соглашаетесь с условиями 
+						<a href="#">Пользовательского соглашения</a>
+					</div>
+				</form>
+				<div class="phone-100-lawyers col">
+				</div>
+			</div>
+		</div>
+
+		<section class="seo-text">
+			<div class="seo-text-title title">
+				Блок для SEO текста
+			</div>
+			<div class="seo-text-text">
+				<p class="text-from-seo">Срочно понадобились услуги профессионального юриста 
+					или адвоката? Решение есть! Наша горячая юридическая линия – 
+					возможность оперативно, абсолютно бесплатно получить ответ на 
+					любой вопрос. Теперь не нужно записываться на офлайн-прием и 
+					тратить время на поездку и очереди перед кабинетом.
+					<br><br>
+					Профессиональная помощь доступна круглосуточно – заявки 
+					обрабатываются в любое время дня и ночи. Обращаясь к 
+					специалистам «100 Юристов», вы можете рассчитывать на 
+					прозрачные, понятные условия сотрудничества.
+				</p>
+				<p class="text-from-seo">Срочно понадобились услуги профессионального юриста 
+					или адвоката? Решение есть! Наша горячая юридическая линия – 
+					возможность оперативно, абсолютно бесплатно получить ответ на 
+					любой вопрос. Теперь не нужно записываться на офлайн-прием и 
+					тратить время на поездку и очереди перед кабинетом.
+					<br><br>
+					Профессиональная помощь доступна круглосуточно – заявки 
+					обрабатываются в любое время дня и ночи. Обращаясь к 
+					специалистам «100 Юристов», вы можете рассчитывать на 
+					прозрачные, понятные условия сотрудничества.
+				</p>
+				<p class="text-from-seo">Срочно понадобились услуги профессионального юриста 
+					или адвоката? Решение есть! Наша горячая юридическая линия – 
+					возможность оперативно, абсолютно бесплатно получить ответ на 
+					любой вопрос. Теперь не нужно записываться на офлайн-прием и 
+					тратить время на поездку и очереди перед кабинетом.
+					<br><br>
+					Профессиональная помощь доступна круглосуточно – заявки 
+					обрабатываются в любое время дня и ночи. Обращаясь к 
+					специалистам «100 Юристов», вы можете рассчитывать на 
+					прозрачные, понятные условия сотрудничества.
+				</p>
+				<p class="text-from-seo">Срочно понадобились услуги профессионального юриста 
+					или адвоката? Решение есть! Наша горячая юридическая линия – 
+					возможность оперативно, абсолютно бесплатно получить ответ на 
+					любой вопрос. Теперь не нужно записываться на офлайн-прием и 
+					тратить время на поездку и очереди перед кабинетом.
+					<br><br>
+					Профессиональная помощь доступна круглосуточно – заявки 
+					обрабатываются в любое время дня и ночи. Обращаясь к 
+					специалистам «100 Юристов», вы можете рассчитывать на 
+					прозрачные, понятные условия сотрудничества.
+				</p>
+				<p class="text-from-seo">Срочно понадобились услуги профессионального юриста 
+					или адвоката? Решение есть! Наша горячая юридическая линия – 
+					возможность оперативно, абсолютно бесплатно получить ответ на 
+					любой вопрос. Теперь не нужно записываться на офлайн-прием и 
+					тратить время на поездку и очереди перед кабинетом.
+					<br><br>
+					Профессиональная помощь доступна круглосуточно – заявки 
+					обрабатываются в любое время дня и ночи. Обращаясь к 
+					специалистам «100 Юристов», вы можете рассчитывать на 
+					прозрачные, понятные условия сотрудничества.
+				</p>
+				<p class="text-from-seo">Срочно понадобились услуги профессионального юриста 
+					или адвоката? Решение есть! Наша горячая юридическая линия – 
+					возможность оперативно, абсолютно бесплатно получить ответ на 
+					любой вопрос. Теперь не нужно записываться на офлайн-прием и 
+					тратить время на поездку и очереди перед кабинетом.
+					<br><br>
+					Профессиональная помощь доступна круглосуточно – заявки 
+					обрабатываются в любое время дня и ночи. Обращаясь к 
+					специалистам «100 Юристов», вы можете рассчитывать на 
+					прозрачные, понятные условия сотрудничества.
+				</p>
+				
+				
+			</div>
+			<div class="button-show-text green-block row">
+				<p class="show-text col">Показать весь текст</p>
+			</div>
+		</section>
 	</div>
+	
+	<div class="container my-container">
+	<section class="slider-review">
+		<div class="review-title title">
+			Отзывы наших клиентов
+		</div>
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slider-body">
+					<div class="slider-body-name">
+						<p class="name">Вадим</p>
+						<p class="date text">02 июля 2023</p>
+					</div>
+					<div class="slider-body-text">
+						Хочу поблагодарить Веру Владимировну 
+						за оказанную мне помощь, объяснила что 
+						да как, на душе стало намного легче
+					</div>
+					<div class="slider-body-questions">
+						<p class="questions">Вопрос:</p>
+						<p class="questions-text text">Заберут ли меня в случае общей 
+							мобилизации на войну если я</p>
+					</div>
+				</div>
+				<div class="swiper-slide slider-body">
+					<div class="slider-body-name">
+						<p class="name">Вадим</p>
+						<p class="date text">02 июля 2023</p>
+					</div>
+					<div class="slider-body-text">
+						Хочу поблагодарить Веру Владимировну 
+						за оказанную мне помощь, объяснила что 
+						да как, на душе стало намного легче
+					</div>
+					<div class="slider-body-questions">
+						<p class="questions">Вопрос:</p>
+						<p class="questions-text text">Заберут ли меня в случае общей 
+							мобилизации на войну если я</p>
+					</div>
+				</div>
+				<div class="swiper-slide slider-body">
+					<div class="slider-body-name">
+						<p class="name">Вадим</p>
+						<p class="date text">02 июля 2023</p>
+					</div>
+					<div class="slider-body-text">
+						Хочу поблагодарить Веру Владимировну 
+						за оказанную мне помощь, объяснила что 
+						да как, на душе стало намного легче
+					</div>
+					<div class="slider-body-questions">
+						<p class="questions">Вопрос:</p>
+						<p class="questions-text text">Заберут ли меня в случае общей 
+							мобилизации на войну если я</p>
+					</div>
+				</div>
+				<div class="swiper-slide slider-body">
+					<div class="slider-body-name">
+						<p class="name">Вадим</p>
+						<p class="date text">02 июля 2023</p>
+					</div>
+					<div class="slider-body-text">
+						Хочу поблагодарить Веру Владимировну 
+						за оказанную мне помощь, объяснила что 
+						да как, на душе стало намного легче
+					</div>
+					<div class="slider-body-questions">
+						<p class="questions">Вопрос:</p>
+						<p class="questions-text text">Заберут ли меня в случае общей 
+							мобилизации на войну если я</p>
+					</div>
+				</div>
+				<div class="swiper-slide slider-body">
+					<div class="slider-body-name">
+						<p class="name">Вадим</p>
+						<p class="date text">02 июля 2023</p>
+					</div>
+					<div class="slider-body-text">
+						Хочу поблагодарить Веру Владимировну 
+						за оказанную мне помощь, объяснила что 
+						да как, на душе стало намного легче
+					</div>
+					<div class="slider-body-questions">
+						<p class="questions">Вопрос:</p>
+						<p class="questions-text text">Заберут ли меня в случае общей 
+							мобилизации на войну если я</p>
+					</div>
+				</div>
+				<div class="swiper-slide slider-body">
+					<div class="slider-body-name">
+						<p class="name">Вадим</p>
+						<p class="date text">02 июля 2023</p>
+					</div>
+					<div class="slider-body-text">
+						Хочу поблагодарить Веру Владимировну 
+						за оказанную мне помощь, объяснила что 
+						да как, на душе стало намного легче
+					</div>
+					<div class="slider-body-questions">
+						<p class="questions">Вопрос:</p>
+						<p class="questions-text text">Заберут ли меня в случае общей 
+							мобилизации на войну если я</p>
+					</div>
+				</div>
+				<div class="swiper-slide slider-body">
+					<div class="slider-body-name">
+						<p class="name">Вадим</p>
+						<p class="date text">02 июля 2023</p>
+					</div>
+					<div class="slider-body-text">
+						Хочу поблагодарить Веру Владимировну 
+						за оказанную мне помощь, объяснила что 
+						да как, на душе стало намного легче
+					</div>
+					<div class="slider-body-questions">
+						<p class="questions">Вопрос:</p>
+						<p class="questions-text text">Заберут ли меня в случае общей 
+							мобилизации на войну если я</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+
+	<div class="container">
+		<div class="questions_lawyers">
+			<div class="questions_lawyers-title title">
+				Юристы портала
+			</div>
+			<div class="questions_lawyers-body row">
+				<div class="all-lawyers col-5">
+					<div class="lawyer">
+						<p class="lawyer-name title">Гурьянова Вера Владимировна</p>
+						<p class="lawyer-city text">Юрист, Самара</p>
+						<p class="lawyer-N_consultation text">693 консультации</p>
+					</div>
+					<div class="lawyer">
+						<p class="lawyer-name title">Гурьянова Вера Владимировна</p>
+						<p class="lawyer-city text">Юрист, Самара</p>
+						<p class="lawyer-N_consultation text">693 консультации</p>
+					</div>
+					<div class="lawyer">
+						<p class="lawyer-name title">Гурьянова Вера Владимировна</p>
+						<p class="lawyer-city text">Юрист, Самара</p>
+						<p class="lawyer-N_consultation text">693 консультации</p>
+					</div>
+					<div class="lawyer">
+						<p class="lawyer-name title">Гурьянова Вера Владимировна</p>
+						<p class="lawyer-city text">Юрист, Самара</p>
+						<p class="lawyer-N_consultation text">693 консультации</p>
+					</div>
+					<div class="lawyers-all button-show-text green-block">
+						<p class="show-text col">Все наши юристы</p>
+					</div>
+				</div>
+				<div class="questions-lawyers col green-block">
+					<div class="questions-lawyers-title title">Задать вопрос юристу</div>
+					<div class="questions-lawyers-text text">
+						Напишите ваш вопрос мы обязательно вам ответим
+					</div>
+					<div class="form-lawyers-questions">
+						<form class="lawyer-question-form row">
+							<div class="form-text-area">
+								<textarea id="popup-input" placeholder="Опишите вашу проблему..." required></textarea>
+							</div>
+							<div class="input-tel col">
+								<input id="popup-input" name="tel" type="tel" class="col-1" required>
+							</div>
+							<div class="input-name col">
+								<input id="popup-input" name="name" type="text" class="col-1" required>
+							</div>
+							<button class="col button-1" type="button">Отправить</button>
+						</form>
+						<div class="lawyer-question-agreement agreement">
+							Отправляя вопрос, вы соглашаетесь с условиями 
+							<a href="#">Пользовательского соглашения</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/index.js"></script>
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	  <!-- Initialize Swiper -->
+	  <script>
+		var swiper = new Swiper(".mySwiper", {
+		  slidesPerView: 3,
+		  spaceBetween: 30,
+		  navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+		});
+	  </script>
 
 </body>
 
-<script  type="text/javascript" src="js/index.js"></script>
 </html>

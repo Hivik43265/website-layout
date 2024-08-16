@@ -6,7 +6,7 @@
     height: 400px;
     position: absolute;
     top:0px;
-    z-index: 2;
+    z-index: 4;
     background: rgba(255,255,255,1);
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -77,34 +77,6 @@
         margin-left: 285px !important;
         margin-top: 30px !important;
         gap:15px;
-
-        .input-tel,.input-name{
-
-            position: relative;
-    }
-
-    .input-tel input, .input-name input{
-        width: 205px;
-        height: 55px;
-        background: rgb(255, 255, 255);
-        border-radius:10px;
-        border: 1px solid rgba(47, 43, 67, 0.15);
-        color: rgba(20, 10, 50, 1);
-        padding-left: 15px;
-        padding-top: 5px;
-    }
-
-        & button{
-            height: 55px;
-            width: 137px;
-            padding: 14px 24px 16px 24px;
-            border-radius: 10px;
-            background: rgba(20, 10, 50, 1);
-            font-size: 16px;
-            font-weight: 600;
-            color:rgba(255,255,255,1);
- 
-        }
     }
 
     .popup-text{
@@ -145,13 +117,28 @@
     z-index: 1;
     background: rgba(0,0,0,1);
     opacity: 0.2;
+    z-index:3;
 }
 
+.input-tel,.input-name{
+
+    position: relative;
+}
+
+.input-tel input, .input-name input{
+    width: 205px;
+    height: 55px;
+    background: rgb(255, 255, 255);
+    border-radius:10px;
+    border: 1px solid rgba(47, 43, 67, 0.15);
+    color: rgba(20, 10, 50, 1);
+    padding-left: 15px;
+    padding-top: 5px;
+}
 
 .input-tel::before{
     content: "Номер телефона";
     position: absolute;
-    width: 500px;
     height: 20px;
     left: 15px;
     top:0px;
@@ -164,7 +151,6 @@
 .input-name::before{
     content: "Ваше имя";
     position: absolute;
-    width: 500px;
     height: 20px;
     left: 15px;
     top:0px;
@@ -177,6 +163,9 @@
 .popup-agreement{
     margin-top: 15px;
     margin-left: 290px;
+}
+
+.agreement{
     font-size: 12px;
     font-weight: 600;
     color: rgba(47, 43, 67, 0.4);
@@ -189,6 +178,23 @@
 
 input:focus{
     outline: none;
+}
+
+.button-1{
+    height: 55px;
+    width: 137px;
+    padding: 14px 24px 16px 24px;
+    border-radius: 10px;
+    background: rgba(20, 10, 50, 1);
+    font-size: 16px;
+    font-weight: 600;
+    color:rgba(255,255,255,1);
+    border: none;
+    transition: all 0.3s;
+
+    &:hover{
+        background: rgb(34, 17, 83);
+    }
 }
 
 @keyframes popup-transformate {
@@ -244,3 +250,5 @@ input:focus{
         opacity: 0;
     }
 }
+
+

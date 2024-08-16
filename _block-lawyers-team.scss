@@ -1,0 +1,93 @@
+.lawyers-team {
+    margin-top: 80px !important;
+}
+
+.lawyers-team-body {
+}
+
+.lawyers-team-body-title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 43.58px;
+    letter-spacing: -0.03em;
+}
+
+.lawyers-team-body-text {
+    margin-bottom: 30px;
+}
+
+.lawyers-team-body-properties {
+    list-style: none;
+    padding: 0;
+
+    & .properties{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38.13px;        
+        letter-spacing: -0.03em;
+        color: #33836E;
+
+        & p{
+            color: #140A32;
+            margin-top:10px;
+            margin-bottom: 0;
+        }
+    }
+}
+.properties {
+}
+.lawyers-team-ico {
+    width: 560px;
+    height: 385px;
+    position: relative;
+}
+
+.team-ico::before {
+    content: "";
+    width: 560px;
+    height: 385px;
+    background: url("../img/team.png");
+    position: absolute;
+}
+
+.feedback {
+    cursor: default !important;
+}
+
+.feedback-body{
+    margin-top: 50px !important;
+    margin-left: -170px;
+}
+
+.feedback-form-title p{
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-top:30px;
+}
+
+.feedback-form{
+    & form{
+        gap:30px;
+    }
+}
+
+.feedback-button{
+    border: 1px solid #FFFFFF !important;
+    background: rgba(255, 255, 255, 0) !important;
+    transition: all 0.3s;
+
+    &:hover{
+        background: rgba(255, 255, 255, 0.3) !important;
+    }
+
+    & button{
+        width: 200px;
+        height: 55px;
+    }
+}
+
+.feedback-agreement, .feedback-agreement a{
+    color: #FFFFFF80 !important;
+    margin-top: 22px;
+}
